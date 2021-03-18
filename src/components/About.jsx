@@ -53,9 +53,7 @@ const About = () => {
                   science emerging in future.
                 </p>
                 <div className="btn-wrapper mb-3">
-                  <p className="category text-success d-inline">
-                    From 9.99%/mo
-                  </p>
+                  <p className="category text-success d-inline">Know More</p>
                   <Button
                     className="btn-link"
                     color="success"

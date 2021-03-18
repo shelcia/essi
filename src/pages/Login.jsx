@@ -26,8 +26,6 @@ import {
   CardFooter,
   CardImg,
   CardTitle,
-  Label,
-  FormGroup,
   Form,
   Input,
   InputGroupAddon,
@@ -38,14 +36,10 @@ import {
   Col,
 } from "reactstrap";
 
-// core components
-// import ExamplesNavbar from "components/Navbars/ExamplesNavbar.js";
-// import Footer from "components/Footer/Footer.js";
-
 export default function RegisterPage() {
   const [squares1to6, setSquares1to6] = React.useState("");
   const [squares7and8, setSquares7and8] = React.useState("");
-  const [fullNameFocus, setFullNameFocus] = React.useState(false);
+  //   const [fullNameFocus, setFullNameFocus] = React.useState(false);
   const [emailFocus, setEmailFocus] = React.useState(false);
   const [passwordFocus, setPasswordFocus] = React.useState(false);
   React.useEffect(() => {
@@ -76,8 +70,7 @@ export default function RegisterPage() {
     );
   };
   return (
-    <>
-      {/* <ExamplesNavbar /> */}
+    <React.Fragment>
       <div className="wrapper">
         <div className="page-header">
           <div className="page-header-image" />
@@ -103,27 +96,10 @@ export default function RegisterPage() {
                           require("../assets/img/square-purple-1.png").default
                         }
                       />
-                      <CardTitle tag="h4">Register</CardTitle>
+                      <CardTitle tag="h4">Signin</CardTitle>
                     </CardHeader>
                     <CardBody>
                       <Form className="form">
-                        <InputGroup
-                          className={classnames({
-                            "input-group-focus": fullNameFocus,
-                          })}
-                        >
-                          <InputGroupAddon addonType="prepend">
-                            <InputGroupText>
-                              <i className="tim-icons icon-single-02" />
-                            </InputGroupText>
-                          </InputGroupAddon>
-                          <Input
-                            placeholder="Full Name"
-                            type="text"
-                            onFocus={(e) => setFullNameFocus(true)}
-                            onBlur={(e) => setFullNameFocus(false)}
-                          />
-                        </InputGroup>
                         <InputGroup
                           className={classnames({
                             "input-group-focus": emailFocus,
@@ -158,24 +134,11 @@ export default function RegisterPage() {
                             onBlur={(e) => setPasswordFocus(false)}
                           />
                         </InputGroup>
-                        <FormGroup check className="text-left">
-                          <Label check>
-                            <Input type="checkbox" />
-                            <span className="form-check-sign" />I agree to the{" "}
-                            <a
-                              href="#pablo"
-                              onClick={(e) => e.preventDefault()}
-                            >
-                              terms and conditions
-                            </a>
-                            .
-                          </Label>
-                        </FormGroup>
                       </Form>
                     </CardBody>
                     <CardFooter>
                       <Button className="btn-round" color="primary" size="lg">
-                        Get Started
+                        Login
                       </Button>
                     </CardFooter>
                   </Card>
@@ -215,8 +178,7 @@ export default function RegisterPage() {
             </Container>
           </div>
         </div>
-        {/* <Footer /> */}
       </div>
-    </>
+    </React.Fragment>
   );
 }

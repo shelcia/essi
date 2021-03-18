@@ -19,7 +19,6 @@ import React from "react";
 import {
   Button,
   Card,
-  CardHeader,
   CardBody,
   CardFooter,
   ListGroupItem,
@@ -40,107 +39,137 @@ const Membership = () => {
         />
         <Container>
           <Row>
-            <Col md="4">
+            <Col md="6">
               <hr className="line-info" />
               <h1>
-                Choose the coin{" "}
-                <span className="text-info">that fits your needs</span>
+                Choose the membership plan{" "}
+                <span className="text-info">that fits you</span>
               </h1>
             </Col>
           </Row>
           <Row>
             <Col md="4">
               <Card className="card-coin card-plain">
-                <CardHeader>
-                  <img
-                    alt="..."
-                    className="img-center img-fluid"
-                    src={require("../assets/img/bitcoin.png").default}
-                  />
-                </CardHeader>
                 <CardBody>
                   <Row>
                     <Col className="text-center" md="12">
-                      <h4 className="text-uppercase">Light Coin</h4>
-                      <span>Plan</span>
+                      <h4 className="text-uppercase">Life member</h4>
+                      <span>Membership</span>
                       <hr className="line-primary" />
                     </Col>
                   </Row>
                   <Row>
                     <ListGroup>
-                      <ListGroupItem>50 messages</ListGroupItem>
-                      <ListGroupItem>100 emails</ListGroupItem>
-                      <ListGroupItem>24/7 Support</ListGroupItem>
+                      <ListGroupItem>
+                        Rs. 1000 for Indian citizens / USD100 or equivalent for
+                        other countries except Nepal
+                      </ListGroupItem>
                     </ListGroup>
                   </Row>
                 </CardBody>
                 <CardFooter className="text-center">
                   <Button className="btn-simple" color="primary">
-                    Get plan
+                    Enroll
                   </Button>
                 </CardFooter>
               </Card>
             </Col>
             <Col md="4">
               <Card className="card-coin card-plain">
-                <CardHeader>
-                  <img
-                    alt="..."
-                    className="img-center img-fluid"
-                    src={require("../assets/img/etherum.png").default}
-                  />
-                </CardHeader>
                 <CardBody>
                   <Row>
                     <Col className="text-center" md="12">
-                      <h4 className="text-uppercase">Dark Coin</h4>
-                      <span>Plan</span>
+                      <h4 className="text-uppercase">Institution member</h4>
+                      <span>Membership</span>
                       <hr className="line-success" />
                     </Col>
                   </Row>
                   <Row>
                     <ListGroup>
-                      <ListGroupItem>150 messages</ListGroupItem>
-                      <ListGroupItem>1000 emails</ListGroupItem>
-                      <ListGroupItem>24/7 Support</ListGroupItem>
+                      <ListGroupItem>
+                        Rs.7,500/- per year (or) Rs.75,000 for onetime for Life
+                        membership
+                      </ListGroupItem>
                     </ListGroup>
                   </Row>
                 </CardBody>
                 <CardFooter className="text-center">
                   <Button className="btn-simple" color="success">
-                    Get plan
+                    Enroll
                   </Button>
                 </CardFooter>
               </Card>
             </Col>
             <Col md="4">
               <Card className="card-coin card-plain">
-                <CardHeader>
-                  <img
-                    alt="..."
-                    className="img-center img-fluid"
-                    src={require("../assets/img/ripp.png").default}
-                  />
-                </CardHeader>
                 <CardBody>
                   <Row>
                     <Col className="text-center" md="12">
-                      <h4 className="text-uppercase">Bright Coin</h4>
-                      <span>Plan</span>
+                      <h4 className="text-uppercase">Industry member</h4>
+                      <span>Membership</span>
                       <hr className="line-info" />
                     </Col>
                   </Row>
                   <Row>
                     <ListGroup>
-                      <ListGroupItem>350 messages</ListGroupItem>
-                      <ListGroupItem>10K emails</ListGroupItem>
-                      <ListGroupItem>24/7 Support</ListGroupItem>
+                      <ListGroupItem>
+                        Rs.10,000/- per year (or) Rs.1,00,000 for onetime for
+                        Life membership
+                      </ListGroupItem>
                     </ListGroup>
                   </Row>
                 </CardBody>
                 <CardFooter className="text-center">
                   <Button className="btn-simple" color="info">
-                    Get plan
+                    Enroll
+                  </Button>
+                </CardFooter>
+              </Card>
+            </Col>
+          </Row>
+          <Row>
+            <Col md="4">
+              <Card className="card-coin card-plain">
+                <CardBody>
+                  <Row>
+                    <Col className="text-center" md="12">
+                      <h4 className="text-uppercase">Student member</h4>
+                      <span>Membership</span>
+                      <hr className="line-warning" />
+                    </Col>
+                  </Row>
+                  <Row>
+                    <ListGroup>
+                      <ListGroupItem>Rs.200 per year</ListGroupItem>
+                    </ListGroup>
+                  </Row>
+                </CardBody>
+                <CardFooter className="text-center">
+                  <Button className="btn-simple" color="warning">
+                    Enroll
+                  </Button>
+                </CardFooter>
+              </Card>
+            </Col>
+            <Col md="4">
+              <Card className="card-coin card-plain">
+                <CardBody>
+                  <Row>
+                    <Col className="text-center" md="12">
+                      <h4 className="text-uppercase">Donor member</h4>
+                      <span>Membership</span>
+                      <hr className="line-danger" />
+                    </Col>
+                  </Row>
+                  <Row>
+                    <ListGroup>
+                      <ListGroupItem>Rs. 25000/- or more</ListGroupItem>
+                    </ListGroup>
+                  </Row>
+                </CardBody>
+                <CardFooter className="text-center">
+                  <Button className="btn-simple" color="danger">
+                    Enroll
                   </Button>
                 </CardFooter>
               </Card>
