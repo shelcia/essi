@@ -41,7 +41,7 @@ const About = () => {
               <Col lg="10" md="10">
                 <h1 className="text-white">
                   About Us <br />
-                  <span className="text-white">secured</span>
+                  {/* <span className="text-white">secured</span> */}
                 </h1>
                 <p className="text-white mb-3">
                   ENERGY SCIENCE SOCIETY OF INDIA (ESSI), established in July
@@ -66,7 +66,7 @@ const About = () => {
                     <i className="tim-icons icon-minimal-right" />
                   </Button>
                 </div>
-                <div className="btn-wrapper">
+                {/* <div className="btn-wrapper">
                   <div className="button-container">
                     <Button
                       className="btn-icon btn-simple btn-round btn-neutral"
@@ -93,7 +93,7 @@ const About = () => {
                       <i className="fab fa-facebook" />
                     </Button>
                   </div>
-                </div>
+                </div> */}
               </Col>
               <Col lg="4" md="5">
                 {/* <img

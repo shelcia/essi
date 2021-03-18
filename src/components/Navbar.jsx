@@ -191,7 +191,7 @@ export default function IndexNavbar() {
             <NavItem>
               <Link to="/login">
                 <Button className="nav-link d-none d-lg-block" color="primary">
-                  <i className="tim-icons icon-spaceship" /> Login
+                  <i className="tim-icons icon-single-02" /> Login
                 </Button>
               </Link>
             </NavItem>
