@@ -16,19 +16,15 @@
 
 */
 import React from "react";
-import { Link, NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 // reactstrap components
 import {
   Button,
   Collapse,
-  //   DropdownToggle,
-  //   DropdownMenu,
-  //   DropdownItem,
-  //   UncontrolledDropdown,
   NavbarBrand,
   Navbar,
   NavItem,
-  //   NavLink,
+  NavLink,
   Nav,
   Container,
   Row,
@@ -122,15 +118,21 @@ export default function IndexNavbar() {
           </div>
           <Nav navbar>
             <NavItem className="mt-2">
-              <NavLink to="/">Join ESSI</NavLink>
+              <NavLink to="/joinessi" tag={Link}>
+                Join ESSI
+              </NavLink>
             </NavItem>
             <NavItem className="mt-2">
-              <NavLink to="/">Articles</NavLink>
+              <NavLink to="/articles" tag={Link}>
+                Articles
+              </NavLink>
             </NavItem>
             <NavItem>
-              <Button className="nav-link d-none d-lg-block" color="primary">
-                <i className="tim-icons icon-single-02" /> Login
-              </Button>
+              <NavLink to="/login" tag={Link}>
+                <Button className="nav-link d-none d-lg-block" color="primary">
+                  <i className="tim-icons icon-single-02" /> Login
+                </Button>
+              </NavLink>
             </NavItem>
           </Nav>
         </Collapse>

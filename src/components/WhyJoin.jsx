@@ -1,7 +1,7 @@
 import React from "react";
 import { Button, Row, Col } from "reactstrap";
 
-const About = () => {
+const WhyJoin = () => {
   return (
     <React.Fragment>
       <div className="wrapper">
@@ -11,11 +11,11 @@ const About = () => {
             className="path"
             src={require("../assets/img/blob.png").default}
           />
-          <div className="content-center" style={{ maxWidth: "1200px" }}>
+          <div className="content-center">
             <Row className="row-grid justify-content-between align-items-center text-left">
-              <Col lg="8" md="8">
+              <Col lg="10" md="10">
                 <h1 className="text-white">
-                  About Us <br />
+                  Why Join ESSI <br />
                 </h1>
                 <p className="text-white mb-3">
                   ENERGY SCIENCE SOCIETY OF INDIA (ESSI), established in July
@@ -26,8 +26,17 @@ const About = () => {
                   energy efficient devices and any other new area in energy
                   science emerging in future.
                 </p>
+                <p className="text-white mb-3">
+                  ENERGY SCIENCE SOCIETY OF INDIA (ESSI), established in July
+                  2013 and its office is located in Puducherry. The objective of
+                  the ESSI is mainly to promote and share the knowledge in
+                  ENERGY SCIENCE & TECHNOLOGY including all renewable energy,
+                  conventional energy, energy storage science and technology,
+                  energy efficient devices and any other new area in energy
+                  science emerging in future.
+                </p>
                 <div className="btn-wrapper mb-3">
-                  <p className="category text-success d-inline">Know More</p>
+                  <p className="category text-success d-inline">Join Us</p>
                   <Button
                     className="btn-link"
                     color="success"
@@ -39,9 +48,6 @@ const About = () => {
                   </Button>
                 </div>
               </Col>
-              <Col lg="2" md="2">
-                ji
-              </Col>
             </Row>
           </div>
         </div>
@@ -50,4 +56,4 @@ const About = () => {
   );
 };
 
-export default About;
+export default WhyJoin;
