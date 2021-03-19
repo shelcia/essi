@@ -1,11 +1,10 @@
 import React from "react";
+import ArticleCards from "../components/ArticleCards";
 
 const Articles = () => {
   return (
     <React.Fragment>
-      <div>
-        <h1> Articles </h1>
-      </div>
+      <ArticleCards />
     </React.Fragment>
   );
 };

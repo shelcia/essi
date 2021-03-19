@@ -94,9 +94,9 @@ const ContactForm = () => {
                 <div className="description">
                   <h4 className="info-title">Find us at the office</h4>
                   <p>
-                    Bld Mihail Kogalniceanu, nr. 8, <br />
-                    7652 Bucharest, <br />
-                    Romania
+                    Pondicherry University, <br />
+                    Chinna Kalapet, Kalapet, <br />
+                    Puducherry 605014
                   </p>
                 </div>
               </div>
@@ -107,8 +107,8 @@ const ContactForm = () => {
                 <div className="description">
                   <h4 className="info-title">Give us a ring</h4>
                   <p>
-                    Michael Jordan <br />
-                    +40 762 321 762 <br />
+                    Pondicherry University <br />
+                    0413 265 5179 <br />
                     Mon - Fri, 8:00-22:00
                   </p>
                 </div>
