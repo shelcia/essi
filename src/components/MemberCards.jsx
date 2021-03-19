@@ -31,7 +31,7 @@ import {
 const MemberCards = () => {
   return (
     <React.Fragment>
-      <section className="section section-lg section-coins">
+      <section className="section section-lg">
         <img
           alt="..."
           className="path"
@@ -47,7 +47,7 @@ const MemberCards = () => {
               </h1>
             </Col>
           </Row>
-          <Row>
+          <Row className="mt-5">
             <Col md="4">
               <Card className="card-coin card-plain">
                 <CardBody>

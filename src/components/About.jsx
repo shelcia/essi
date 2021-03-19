@@ -39,8 +39,15 @@ const About = () => {
                   </Button>
                 </div>
               </Col>
-              <Col lg="2" md="2">
-                ji
+              <Col lg="4" md="4">
+                <div className="text-center">
+                  <img
+                    src="https://cdn.discordapp.com/attachments/795010536365752320/822582821528535060/Screenshot_2021-03-20_at_2.59.48_AM.png"
+                    alt=""
+                    className="img-fluid rounded shadow-lg mx-5 border border-primary"
+                  />
+                  <h2 className="text-light">Our Founder</h2>
+                </div>
               </Col>
             </Row>
           </div>
