@@ -1,5 +1,5 @@
 import React from "react";
-import MemberCards from "../components/Membership.jsx";
+import MemberCards from "../components/MemberCards";
 
 const Membership = () => {
   return (

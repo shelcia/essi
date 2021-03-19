@@ -8,6 +8,7 @@ import "./assets/scss/blk-design-system-react.scss?v=1.2.0";
 import "./assets/demo/demo.css";
 import HomePage from "./pages/HomePage";
 import Login from "./pages/Login";
+import Membership from "./pages/Membership";
 
 const App = () => {
   return (
@@ -17,6 +18,7 @@ const App = () => {
         <Switch>
           <Route exact path="/" component={HomePage} />
           <Route path="/login" component={Login} />
+          <Route path="/joinessi" component={Membership} />
         </Switch>
         <Footer />
       </BrowserRouter>

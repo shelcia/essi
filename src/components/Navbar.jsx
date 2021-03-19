@@ -16,7 +16,7 @@
 
 */
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 // reactstrap components
 import {
   Button,
@@ -121,53 +121,17 @@ export default function IndexNavbar() {
             </Row>
           </div>
           <Nav navbar>
-            {/* <UncontrolledDropdown nav>
-              <DropdownToggle
-                caret
-                color="default"
-                data-toggle="dropdown"
-                href="#pablo"
-                nav
-                onClick={(e) => e.preventDefault()}
-              >
-                <i className="fa fa-cogs d-lg-none d-xl-none" />
-                Getting started
-              </DropdownToggle>
-              <DropdownMenu className="dropdown-with-icons">
-                <DropdownItem href="https://demos.creative-tim.com/blk-design-system-react/#/documentation/overview">
-                  <i className="tim-icons icon-paper" />
-                  Documentation
-                </DropdownItem>
-                <DropdownItem tag={Link} to="/register-page">
-                  <i className="tim-icons icon-bullet-list-67" />
-                  Register Page
-                </DropdownItem>
-                <DropdownItem tag={Link} to="/landing-page">
-                  <i className="tim-icons icon-image-02" />
-                  Landing Page
-                </DropdownItem>
-                <DropdownItem tag={Link} to="/profile-page">
-                  <i className="tim-icons icon-single-02" />
-                  Profile Page
-                </DropdownItem>
-              </DropdownMenu>
-            </UncontrolledDropdown> */}
-            <NavItem>
-              <Link to="/login">
-                <Button className="nav-link d-none d-lg-block" color="primary">
-                  <i className="tim-icons icon-single-02" /> Login
-                </Button>
-              </Link>
+            <NavItem className="mt-2">
+              <NavLink to="/">Join ESSI</NavLink>
             </NavItem>
-            {/* <NavItem>
-              <Button
-                className="nav-link d-none d-lg-block"
-                color="default"
-                onClick={scrollToDownload}
-              >
-                <i className="tim-icons icon-cloud-download-93" /> Download
+            <NavItem className="mt-2">
+              <NavLink to="/">Articles</NavLink>
+            </NavItem>
+            <NavItem>
+              <Button className="nav-link d-none d-lg-block" color="primary">
+                <i className="tim-icons icon-single-02" /> Login
               </Button>
-            </NavItem> */}
+            </NavItem>
           </Nav>
         </Collapse>
       </Container>

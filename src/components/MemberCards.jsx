@@ -28,7 +28,7 @@ import {
   Col,
 } from "reactstrap";
 
-const Membership = () => {
+const MemberCards = () => {
   return (
     <React.Fragment>
       <section className="section section-lg section-coins">
@@ -181,4 +181,4 @@ const Membership = () => {
   );
 };
 
-export default Membership;
+export default MemberCards;
