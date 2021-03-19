@@ -12,6 +12,7 @@ import HomePage from "./pages/HomePage";
 import Login from "./pages/Login";
 import Membership from "./pages/Membership";
 import Articles from "./pages/Articles";
+import Contact from "./pages/Contact";
 
 const App = () => {
   return (
@@ -23,6 +24,7 @@ const App = () => {
           <Route path="/login" component={Login} />
           <Route path="/joinessi" component={Membership} />
           <Route path="/articles" component={Articles} />
+          <Route path="/contact" component={Contact} />
         </Switch>
         <Footer />
       </BrowserRouter>

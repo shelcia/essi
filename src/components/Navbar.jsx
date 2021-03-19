@@ -127,6 +127,11 @@ export default function IndexNavbar() {
                 Articles
               </NavLink>
             </NavItem>
+            <NavItem className="mt-2">
+              <NavLink to="/contact" tag={Link}>
+                Contact
+              </NavLink>
+            </NavItem>
             <NavItem>
               <NavLink to="/login" tag={Link}>
                 <Button className="nav-link d-none d-lg-block" color="primary">
