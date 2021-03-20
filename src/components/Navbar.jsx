@@ -128,6 +128,11 @@ export default function IndexNavbar() {
               </NavLink>
             </NavItem>
             <NavItem className="mt-2">
+              <NavLink to="/officebearers" tag={Link}>
+                Office Bearers
+              </NavLink>
+            </NavItem>
+            <NavItem className="mt-2">
               <NavLink to="/contact" tag={Link}>
                 Contact
               </NavLink>

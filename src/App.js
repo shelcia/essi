@@ -13,6 +13,7 @@ import Login from "./pages/Login";
 import Membership from "./pages/Membership";
 import Articles from "./pages/Articles";
 import Contact from "./pages/Contact";
+import OfficeBearers from "./pages/OfficeBearer";
 
 const App = () => {
   return (
@@ -25,6 +26,7 @@ const App = () => {
           <Route path="/joinessi" component={Membership} />
           <Route path="/articles" component={Articles} />
           <Route path="/contact" component={Contact} />
+          <Route path="/officebearers" component={OfficeBearers} />
         </Switch>
         <Footer />
       </BrowserRouter>
