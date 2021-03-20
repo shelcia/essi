@@ -107,9 +107,11 @@ const ContactForm = () => {
                 <div className="description">
                   <h4 className="info-title">Give us a ring</h4>
                   <p>
-                    Pondicherry University <br />
-                    0413 265 5179 <br />
-                    Mon - Fri, 8:00-22:00
+                    The Secretary (ESSI) <br />
+                    ramesha@cecri.res.in <br />
+                    energy.science.society@gmail.com
+                    <br />
+                    <a href="www.essi.org.in">www.essi.org.in</a>
                   </p>
                 </div>
               </div>

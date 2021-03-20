@@ -47,7 +47,7 @@ const About = () => {
                     className="img-fluid rounded shadow-lg mx-5 border border-primary"
                   />
                   <h4 className="mt-3">Prof. Ramaswamy Murugan</h4>
-                  <h6 className="text-warning"> Our Founder</h6>
+                  <h6 className="text-warning"> Our President</h6>
                 </div>
               </Col>
             </Row>

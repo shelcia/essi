@@ -15,7 +15,7 @@
 * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
 */
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 // reactstrap components
 import {
@@ -30,6 +30,25 @@ import {
 } from "reactstrap";
 
 export default function Footer() {
+  const [footerLinks] = useState([
+    {
+      name: "Contact Us",
+      link: "/contact",
+    },
+    {
+      name: "Articles",
+      link: "/articles",
+    },
+    {
+      name: "Join Us",
+      link: "/joinessi",
+    },
+    {
+      name: "Office Bearers",
+      link: "/officebearers",
+    },
+  ]);
+
   return (
     <footer className="footer">
       <Container>
@@ -39,50 +58,24 @@ export default function Footer() {
           </Col>
           <Col md="3">
             <Nav>
-              <NavItem>
-                <NavLink to="/" tag={Link}>
-                  Home
-                </NavLink>
-              </NavItem>
-              <NavItem>
-                <NavLink to="/landing-page" tag={Link}>
-                  Landing
-                </NavLink>
-              </NavItem>
-              <NavItem>
-                <NavLink to="/register-page" tag={Link}>
-                  Register
-                </NavLink>
-              </NavItem>
-              <NavItem>
-                <NavLink to="/profile-page" tag={Link}>
-                  Profile
-                </NavLink>
-              </NavItem>
+              {footerLinks.map((item, index) => (
+                <NavItem key={index}>
+                  <NavLink to={item.link} tag={Link}>
+                    {item.name}
+                  </NavLink>
+                </NavItem>
+              ))}
             </Nav>
           </Col>
           <Col md="3">
             <Nav>
-              <NavItem>
-                <NavLink href="https://creative-tim.com/contact-us?ref=blkdsr-footer">
-                  Contact Us
-                </NavLink>
-              </NavItem>
-              <NavItem>
-                <NavLink href="https://creative-tim.com/about-us?ref=blkdsr-footer">
-                  About Us
-                </NavLink>
-              </NavItem>
-              <NavItem>
-                <NavLink href="https://creative-tim.com/blog?ref=blkdsr-footer">
-                  Blog
-                </NavLink>
-              </NavItem>
-              <NavItem>
-                <NavLink href="https://opensource.org/licenses/MIT">
-                  License
-                </NavLink>
-              </NavItem>
+              {footerLinks.map((item, index) => (
+                <NavItem key={index}>
+                  <NavLink to={item.link} tag={Link}>
+                    {item.name}
+                  </NavLink>
+                </NavItem>
+              ))}
             </Nav>
           </Col>
           <Col md="3">
